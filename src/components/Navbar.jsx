@@ -47,7 +47,7 @@ const Navbar = () => {
   return (
     <AppBar position='sticky'>
       <StyledToolbar>
-        <Typography variant="h6" sx={{ display: { xs: "none", sm: "block"}}}>Navbar</Typography>
+        <Typography variant="h6" sx={{ display: { xs: "none", sm: "block"}}}>Limuz</Typography>
         <AcUnitIcon sx={{ display: { xs: "block", sm: "none"}}}/>
         <Search><InputBase placeholder='search...'/></Search>
         <Icons>
@@ -57,10 +57,10 @@ const Navbar = () => {
           <Badge badgeContent={4} color="error">
            <NotificationsIcon color="white"/>
           </Badge>
-          <Avatar onClick={e=>setOpen(true)} sx={{ width: 30, height: 30, bgcolor: deepOrange[500] }}>N</Avatar>
+          <Avatar sx={{ width: 30, height: 30, bgcolor: deepOrange[500] }} onClick={(e)=>setOpen(true)} >L</Avatar>
         </Icons>
         <UserBox variant="span">
-          <Avatar onClick={e=>setOpen(true)} sx={{ width: 30, height: 30, bgcolor: deepOrange[500] }}>N</Avatar>
+          <Avatar sx={{ width: 30, height: 30, bgcolor: deepOrange[500] }} onClick={(e)=>setOpen(true)}>L</Avatar>
           <Typography>Mui</Typography>
         </UserBox>
       </StyledToolbar>
