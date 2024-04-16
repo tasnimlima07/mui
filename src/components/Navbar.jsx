@@ -1,11 +1,14 @@
 import { AppBar, Icon, Toolbar, Typography, styled, Box, Avatar } from '@mui/material'
-import React from 'react'
+import React, { useState } from 'react';
 import AcUnitIcon from '@mui/icons-material/AcUnit';
 import InputBase from '@mui/material/InputBase';
 import Badge from '@mui/material/Badge';
 import MailIcon from '@mui/icons-material/Mail';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import { deepOrange, deepPurple } from '@mui/material/colors';
+import Button from '@mui/material/Button';
+import Menu from '@mui/material/Menu';
+import MenuItem from '@mui/material/MenuItem';
 
 const StyledToolbar = styled(Toolbar)({
   display: "flex",
@@ -21,12 +24,26 @@ const Search = styled("div")(({theme}) => ({
 }));
 
 const Icons = styled(Box)(({theme}) => ({
-  display: "flex",
-  gap: "20px",
+  display: "none",
   alignItems: "center",
+  gap: "20px",
+  [theme.breakpoints.up("sm")]:{
+    display: "flex",
+  }
+}));
+
+const UserBox = styled(Box)(({theme}) => ({
+  display: "flex",
+  gap: "10px",
+  alignItems: "center",
+  [theme.breakpoints.up("sm")]:{
+    display: "none",
+  }
 }));
 
 const Navbar = () => {
+  const [open, setOpen] = useState(false);
+
   return (
     <AppBar position='sticky'>
       <StyledToolbar>
@@ -40,10 +57,32 @@ const Navbar = () => {
           <Badge badgeContent={4} color="error">
            <NotificationsIcon color="white"/>
           </Badge>
-          <Avatar sx={{ width: 30, height: 30, bgcolor: deepOrange[500] }}>N</Avatar>
-
+          <Avatar onClick={e=>setOpen(true)} sx={{ width: 30, height: 30, bgcolor: deepOrange[500] }}>N</Avatar>
         </Icons>
+        <UserBox variant="span">
+          <Avatar onClick={e=>setOpen(true)} sx={{ width: 30, height: 30, bgcolor: deepOrange[500] }}>N</Avatar>
+          <Typography>Mui</Typography>
+        </UserBox>
       </StyledToolbar>
+        <Menu
+        id="demo-positioned-menu"
+        aria-labelledby="demo-positioned-button"
+        open={open}
+        onClose={(e)=>setOpen(false)}
+        anchorOrigin={{
+          vertical: 'top',
+          horizontal: 'right',
+        }}
+        transformOrigin={{
+          vertical: 'top',
+          horizontal: 'right',
+        }}
+      >
+        <MenuItem >Profile</MenuItem>
+        <MenuItem >My account</MenuItem>
+        <MenuItem >Logout</MenuItem>
+      </Menu>
+          
       
     </AppBar>
   )
