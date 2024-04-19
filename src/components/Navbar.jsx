@@ -61,7 +61,7 @@ const Navbar = () => {
         </Icons>
         <UserBox variant="span">
           <Avatar sx={{ width: 30, height: 30, bgcolor: deepOrange[500] }} onClick={(e)=>setOpen(true)}>L</Avatar>
-          <Typography>Mui</Typography>
+          <Typography>Limuz</Typography>
         </UserBox>
       </StyledToolbar>
         <Menu

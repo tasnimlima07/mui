@@ -13,7 +13,7 @@ import Switch from '@mui/material/Switch';
 
 const label = { inputProps: { 'aria-label': 'Switch demo' } };
 
-const Sidebar = () => {
+const Sidebar = ({mode, setMode}) => {
   return (
     <Box
     flex={1} p={2} 
@@ -83,7 +83,7 @@ const Sidebar = () => {
               <ListItemIcon>
                 <NightlightIcon/>
               </ListItemIcon>
-              <Switch {...label} />
+              <Switch onClick={e => setMode(mode === "light"? "dark" : "light" )} {...label} />
             </ListItemButton>
           </ListItem>
       </List>
