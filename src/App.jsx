@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Rightbar from './components/Rightbar'
-import Feed from './components/Feed'
+import Post from './components/Post';
 import Sidebar from './components/Sidebar'
 import { Box, createTheme } from '@mui/material'
 import Stack from '@mui/material/Stack';
@@ -25,7 +25,7 @@ const App = () => {
       <Navbar/>
       <Stack direction="row" spacing={2} justifyContent="space-between">
         <Sidebar setMode={setMode} mode={mode}/>
-        <Feed/>
+        <Post/>
         <Rightbar/>
       </Stack>
       <Add/>

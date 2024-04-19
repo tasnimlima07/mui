@@ -76,7 +76,7 @@ const Rightbar = () => {
           <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
       <ListItem alignItems="flex-start">
         <ListItemAvatar>
-          <Avatar alt="Remy Sharp" src="https://mui.com/static/images/avatar/1.jpg" />
+          <Avatar alt="Remy Sharp" src="https://mui.com/static/images/avatar/2.jpg" />
         </ListItemAvatar>
         <ListItemText
           primary="Brunch this weekend?"
@@ -98,7 +98,7 @@ const Rightbar = () => {
       <Divider variant="inset" component="li" />
       <ListItem alignItems="flex-start">
         <ListItemAvatar>
-          <Avatar alt="Travis Howard" src="https://mui.com/static/images/avatar/1.jpg" />
+          <Avatar alt="Travis Howard" src="https://mui.com/static/images/avatar/6.jpg" />
         </ListItemAvatar>
         <ListItemText
           primary="Summer BBQ"
@@ -120,7 +120,7 @@ const Rightbar = () => {
       <Divider variant="inset" component="li" />
       <ListItem alignItems="flex-start">
         <ListItemAvatar>
-          <Avatar alt="Cindy Baker" src="https://mui.com/static/images/avatar/1.jpg" />
+          <Avatar alt="Cindy Baker" src="https://mui.com/static/images/avatar/7.jpg" />
         </ListItemAvatar>
         <ListItemText
           primary="Oui Oui"

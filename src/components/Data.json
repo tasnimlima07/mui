@@ -1,0 +1,50 @@
+{
+    "cards": [
+      {
+        "id": 1,
+        "avatar": "https://mui.com/static/images/avatar/7.jpg",
+        "title": "Emily Brown",
+        "subheader": "September 14, 2016",
+        "image": "/img/6.jpg",
+        "content": "This impressive paella is a perfect party dish and a fun meal to cook together with your guests. Add 1 cup of frozen peas along with the mussels, if you like.",
+        "favorite": true
+      },
+      {
+        "id": 2,
+        "avatar": "https://mui.com/static/images/avatar/2.jpg",
+        "title": "Grace Lee",
+        "subheader": "February 28, 2018",
+        "image": "/img/2.jpg",
+        "content": "A delicious chicken curry recipe that will tantalize your taste buds.",
+        "favorite": false
+      },
+      {
+        "id": 3,
+        "avatar": "https://mui.com/static/images/avatar/4.jpg",
+        "title": "Henry Wilson",
+        "subheader": "May 5, 2020",
+        "image": "/img/3.jpg",
+        "content": "Healthy and flavorful vegetable stir fry that's quick and easy to make.",
+        "favorite": false
+      },
+      {
+        "id": 4,
+        "avatar": "https://mui.com/static/images/avatar/1.jpg",
+        "title": "Isabella Martinez",
+        "subheader": "December 10, 2019",
+        "image": "/img/4.jpg",
+        "content": "Indulge in this rich and decadent chocolate cake, perfect for any occasion.",
+        "favorite": true
+      },
+      {
+        "id": 5,
+        "avatar": "https://mui.com/static/images/avatar/3.jpg",
+        "title": "Claire Davis",
+        "subheader": "July 20, 2017",
+        "image": "/img/5.jpg",
+        "content": "Savor the flavor of perfectly grilled salmon with this simple and delicious recipe.",
+        "favorite": false
+      }
+    ]
+  }
+  
