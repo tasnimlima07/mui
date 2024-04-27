@@ -1,10 +1,10 @@
-## MUITest
+## MUI
 Welcome to MUITest! This repository contains a project built with React and Material-UI, aimed at showcasing various components and features available in Material-UI.
 ![Image 1](public/img/mui1.png)
 
 
 ## Project Overview
-MUITest serves as a demonstration of how to implement Material-UI components and utilize its features within a React application. It includes examples of common UI elements, such as buttons, forms, navigation bars, and more, styled using Material-UI's design principles.
+MUI serves as a demonstration of how to implement Material-UI components and utilize its features within a React application. It includes examples of common UI elements, such as buttons, forms, navigation bars, and more, styled using Material-UI's design principles.
 
 ## Features
 Material-UI Components: Explore a variety of Material-UI components and their usage patterns.
